@@ -158,6 +158,7 @@
 
 }
 
+
 .image-product {
   position: absolute;
   right: 0px;
@@ -342,6 +343,7 @@
 }
 
 .main-card img {
+  position: relative;
   padding: 0 12px;
   display: flex;
   width: 648px;
@@ -353,12 +355,135 @@
 }
 
 .sub-card {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
 }
+.sub-card>:nth-child(3)>.hot-product-hover,.sub-card>:nth-child(4) .hot-product-hover{
+    margin-bottom  : 0px;
+}
+.main-card{position: relative;}
+.card{position: relative;}
+.card .hot-product-hover{
+  width: 92%;
+  margin-bottom: 12px;
+}
+.hot-product-hover{
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  bottom:0;
+  right:12px;
+  position: absolute;
+  width: 96%;
+  height: 52px;
+  background-color: hsl(210,25%,15%);
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+.column-hover{
+  padding: 15px 14px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  bottom:78px;
+  right:6px;
+  position: absolute;
+  width: 94%;
+  height: 52px;
+  background-color: hsl(210,25%,15%);
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+.item .column-hover{
+  padding: 15px 14px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  bottom:78px;
+  right:0px;
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  background-color: hsl(210,25%,15%);
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
 
+.column:hover .column-hover {
+  opacity: 1;
+}
+.item:hover .column-hover {
+  opacity: 1;
+}
+
+.product-hover-shop:hover i,
+.product-hover-shop:hover span {
+  cursor: pointer;
+  color: #FF6F61; /* Change to your desired color */
+}
+
+
+.product-icons{
+  display: flex;
+  flex-direction: row
+  ;
+  gap:21px;
+}
+.icon-hover:hover{
+  color: #e76f51;
+}
+.product-hover-shop span{
+ 
+  color: var(--White, #FFF);
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Button */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fa-bag-shopping{width: 25px;height: 25px;margin-top: 3px;color: #E3E3E3;}
+.main-card:hover .hot-product-hover,.card:hover .hot-product-hover{
+  
+  opacity: 1;
+}
+.hot-product-hover-title span{
+  margin-left: 10px;
+  color: var(--White, #FFF);
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* H6 */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hot-product-hover-stock span{
+  margin-right: 10px;
+
+  color: var(--White, #FFF);
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* H6 */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
 .card img {
   padding: 0 12px;
   display: flex;
@@ -764,22 +889,24 @@
   width: 1320px;
   height: 478px;
 }
-
+.item{position: relative;}
 .item img {
+
   width: 312px;
   height: 400px;
   flex-shrink: 0;
   object-fit: cover;
 }
+
 /* Custom CSS for Owl Carousel navigation buttons */
 /* Targeting the previous button */
 .owl-prev span img {
   border: none;
   position: absolute;
   left: 0px;
-  top:166px;
+  top: 166px;
 
-padding: auto;
+  padding: auto;
 }
 
 /* Targeting the next button */
@@ -788,97 +915,123 @@ padding: auto;
 
   position: absolute;
   right: 0px;
-  top:166px;
+  top: 166px;
 }
-.owl-nav button{
+
+.owl-nav button {
   background-color: #2a9d8f;
 }
-/* Custom CSS for button hover state */
-.owl-ctprev:hover,
-.owl-ctnext:hover {
-  
- 
- 
-}
-/* newsletter-instageam */
-.newsletter-instagram{
+
+.newsletter-instagram {
   position: relative;
   margin-top: 140px;
   width: calc(1320px + 300px);
   height: 654px;
   display: inline-flex;
-padding: 100px 300px;
-flex-direction: column;
-align-items: center;
-gap: 70px;
-background: var(--Black-5, rgba(30, 40, 50, 0.05));
+  padding: 100px 300px;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  background: var(--Black-5, rgba(30, 40, 50, 0.05));
 }
-.instagram{
+
+.instagram {
   position: relative;
   width: 1320px;
-height: 319px;
+  height: 319px;
 
 }
-.instagram div{
+
+.instagram div {
   width: 100%;
-  display: flex ;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.instagram .section-title{
+
+.instagram .section-title {
   position: relative;
 }
-.instagram-content{
+
+.instagram-content {
   width: 1320px;
   height: 200px;
   position: absolute;
-  bottom:10px;
+  bottom: 10px;
   display: inline-flex;
-justify-content: space-between;
-align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-gap: 24px;
+  gap: 24px;
 
 }
-.instagram .section-title-last{
+
+.instagram .section-title-last {
   position: relative;
-top:300px;
+  top: 300px;
 }
-.service{
-  width: 740px;
 
+.instagram-image {
+
+  position: relative;
+ 
+}
+.instagram-image-hover{
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  /* animation: onhover 1s linear forwards ; */
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.insta-icon img{
+display: none;
+  position: absolute;
+  right:75px;
+  animation: onhover 0.5s linear ;
   
-
+}
+@keyframes onhover {
+  from{opacity: 0;}to{opacity: 1;}
+}
+.instagram-image:hover .insta-icon img,
+.instagram-image:hover .instagram-image-hover{
+  display: block;
+  visibility: visible;
+  
+}
+.service {
+  width: 740px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  top:90px;
+  top: 90px;
 }
-.service .email-input input{
+
+.service .email-input input {
   border-top: none;
   border-right: none;
   border-left: none;
- 
-   background-color:rgb(244,244,245) ;
+
+  background-color: rgb(244, 244, 245);
   outline: none;
   padding-right: 500px;
   padding-bottom: 13px;
   padding-left: 15px;
-  
-flex-shrink: 0;
+
+  flex-shrink: 0;
 }
-.service .submit-button input{
+
+.service .submit-button input {
   border-top: none;
   border-right: none;
   border-left: none;
-  padding-bottom:5px ;
+  padding-bottom: 5px;
   padding-top: 10px;
 
-
-
-   
- 
-  
-flex-shrink: 0;
+  flex-shrink: 0;
 }
