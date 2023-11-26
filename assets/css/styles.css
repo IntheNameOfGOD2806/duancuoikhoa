@@ -1262,6 +1262,9 @@ text-transform: capitalize;
   line-height: 24px; /* 171.429% */
   text-transform: capitalize;
 }
+.footer-menu-content span:hover{
+  color: #FF6F61;
+}
 .footer-menu-title >span{
   color: var(--Dark, #000);
 font-feature-settings: 'clig' off, 'liga' off;
