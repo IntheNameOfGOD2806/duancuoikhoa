@@ -918,6 +918,9 @@ justify-content: center;
   gap: 8px;
   background: var(--White, #FFF);
 }
+.banner-button:hover{
+  background-color: #FF6F61;
+}
 
 .banner-button span {
   color: var(--Black, #1E2832);
