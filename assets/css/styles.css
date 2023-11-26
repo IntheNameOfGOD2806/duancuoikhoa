@@ -445,9 +445,9 @@
   align-items: center;
   z-index: 10000;
   bottom: 0;
-  right: 0px;
+  right: 11px;
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 52px;
   background-color: hsl(210, 25%, 15%);
   transition: opacity 0.5s ease;
