@@ -1180,3 +1180,39 @@
 .category span:hover {
   color: #FF6F61;
 }
+/* footer */
+.footer{
+  width: 1920px;
+  height: 355px;
+  display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 90px;
+background-color: #2a9d8f;
+}
+.top-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+height: 213px;
+background-color: #e76f51;
+}
+.left-footer{
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+width: 392px;
+height: 207px;
+background-color:#e9c46a;
+}
+.footer-menu{
+  display: flex;
+width: 200px;
+flex-direction: column;
+align-items: flex-start;
+gap: 22px;
+height: 100%;
+background-color:#e9c46a;
+
+}
