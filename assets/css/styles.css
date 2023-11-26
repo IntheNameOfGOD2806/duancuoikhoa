@@ -653,6 +653,10 @@ justify-content: center;
   background: var(--Black, #1E2832);
   width: 92px;
   height: 32px;
+  transition: background-color 0.5s ease;
+}
+.button-filter:hover{
+  background:#FF6F61
 }
 
 .button-filter span {
@@ -1077,7 +1081,7 @@ display: none;
 
   background-color: rgb(244, 244, 245);
   outline: none;
-  padding-right: 500px;
+  padding-right: 470px;
   padding-bottom: 13px;
   padding-left: 15px;
 
@@ -1085,6 +1089,9 @@ display: none;
 }
 
 .service .submit-button input {
+  background-color: rgb(244, 244, 245);
+
+  width: 80px;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -1092,4 +1099,7 @@ display: none;
   padding-top: 10px;
 
   flex-shrink: 0;
+}
+.category span:hover{
+color:#FF6F61 ;
 }
