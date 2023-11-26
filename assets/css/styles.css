@@ -1,5 +1,6 @@
 /* ====== Reset Browser =========== */
 * {
+  cursor:default;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -28,6 +29,9 @@
   height: 847px;
   flex-shrink: 0;
   background-color: rgb(243, 244, 244);
+}
+.header-menu-list li a:hover {
+  color: #FF6F61;
 }
 
 .header {
@@ -64,6 +68,15 @@
   gap: 22px;
 
 
+}
+.button-account:hover{
+  cursor: pointer;
+  color:#FF6F61
+}
+.button-shopping:hover{
+  cursor: pointer;
+
+  color:#FF6F61
 }
 
 .button {
@@ -175,6 +188,34 @@
   z-index: 1;
 
 }
+.product-price-hidden{
+  color: var(--Dark, #000);
+text-align: right;
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Span */
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+  display: none;
+}
+.column-price-hidden:hover .product-price-hidden{
+  display: block;
+}
+.column-price-hidden:hover .product-price>:first-child{
+  display: none;
+}
+.column-price-hidden:hover .product-price>:nth-child(2){
+  display: none;
+}
+.product-price>:first-child{
+  text-decoration: line-through;
+  position: relative;
+  bottom: 2px;
+}
 
 .reactangle {
 
@@ -244,14 +285,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 11px;
   color: var(--White, #FFF);
 
   width: 223px;
   height: 72px;
   background: var(--Black, #1E2832);
 }
-
+.shopButton:hover{
+  background-color: #FF6F61;
+  transition: background-color 0.5s ease;
+}
 .shopnow {
   color: var(--White, #FFF);
   font-feature-settings: 'clig'off, 'liga'off;
@@ -267,8 +311,7 @@
 
 .shopButton i {
   display: flex;
-  width: 30px;
-  height: 30px;
+  font-size: 24px;
   justify-content: center;
   align-items: center;
 }
@@ -344,30 +387,35 @@
 
 .main-card img {
   position: relative;
-  padding: 0 12px;
+  
   display: flex;
   width: 648px;
   height: 648px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  object-fit: fill;
+  object-fit:fill;
 }
 
 .sub-card {
   position: relative;
+  padding-left: 12px;
   display: flex;
+  gap:24px;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content:flex-start;
 }
 .sub-card>:nth-child(3)>.hot-product-hover,.sub-card>:nth-child(4) .hot-product-hover{
-    margin-bottom  : 0px;
+    margin-bottom  : 12px;
 }
 .main-card{position: relative;}
 .card{position: relative;}
 .card .hot-product-hover{
-  width: 92%;
+  position: absolute;
+  right: 0px;
+  bottom: -12px;
+  width: 100%;
   margin-bottom: 12px;
 }
 .hot-product-hover{
@@ -377,9 +425,9 @@
   align-items: center;
   z-index: 10000;
   bottom:0;
-  right:12px;
+  right:0px;
   position: absolute;
-  width: 96%;
+  width: 100%;
   height: 52px;
   background-color: hsl(210,25%,15%);
   transition: opacity 0.5s ease; /* Transition for opacity */
@@ -424,6 +472,7 @@
 
 .product-hover-shop:hover i,
 .product-hover-shop:hover span {
+ 
   cursor: pointer;
   color: #FF6F61; /* Change to your desired color */
 }
@@ -438,7 +487,13 @@
 .icon-hover:hover{
   color: #e76f51;
 }
+.product-hover-shop{
+  display: flex;
+align-items: center;
+justify-content: center;  
+}
 .product-hover-shop span{
+
  
   color: var(--White, #FFF);
   font-feature-settings: 'clig' off, 'liga' off;
@@ -451,10 +506,18 @@
   line-height: normal;
   text-transform: capitalize;
 }
-.fa-bag-shopping{width: 25px;height: 25px;margin-top: 3px;color: #E3E3E3;}
+.product-hover-shop i{
+  font-size: 20px;
+}
+.product-hover-shop .fa-bag-shopping{width: 25px;height: 25px;margin-top: 3px;color: #E3E3E3;}
 .main-card:hover .hot-product-hover,.card:hover .hot-product-hover{
   
   opacity: 1;
+}
+.product-hover-shop .fa-bag-shopping{
+  width: 30px;
+  height: 25px;
+  
 }
 .hot-product-hover-title span{
   margin-left: 10px;
@@ -485,7 +548,7 @@
   text-transform: capitalize;
 }
 .card img {
-  padding: 0 12px;
+  
   display: flex;
   width: 312px;
   height: 312px;
@@ -496,15 +559,10 @@
 }
 
 /* Styles for both first and second child */
-.sub-card> :nth-child(-n+2) {
-  padding-bottom: 12px;
-}
+
 
 /* Styles for the third and fourth child */
-.sub-card> :nth-child(n+3):nth-child(-n+4) {
-  /* Your styles for the third and fourth child here */
-  padding-top: 12px;
-}
+
 
 /* grid-products */
 .grid-products {
