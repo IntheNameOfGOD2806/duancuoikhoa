@@ -189,6 +189,7 @@
   width: 424px;
   height: 542px;
   z-index: 1;
+  object-fit: cover;
 
 }
 
