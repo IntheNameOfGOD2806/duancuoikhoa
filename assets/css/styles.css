@@ -450,7 +450,7 @@
   height: 52px;
   background-color: hsl(210, 25%, 15%);
   transition: opacity 0.5s ease;
-  /* Transition for opacity */
+  
 }
 
 .column-hover {
@@ -467,8 +467,9 @@
   height: 52px;
   background-color: hsl(210, 25%, 15%);
   transition: opacity 0.5s ease;
-  /* Transition for opacity */
+
 }
+
 
 .item .column-hover {
   padding: 15px 14px;
@@ -502,8 +503,9 @@
   color: #FF6F61;
   /* Change to your desired color */
 }
-
-
+.product-hover-icon{
+  
+}
 .product-icons {
   display: flex;
   flex-direction: row;
