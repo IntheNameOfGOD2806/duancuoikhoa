@@ -349,7 +349,7 @@
 
 .frame-right {
   position: absolute;
-  right: 80px;
+  right: 89px;
   width: 194.754px;
   height: 261.907px;
   flex-shrink: 0;
@@ -1106,13 +1106,13 @@
 
 .instagram-image-hover {
   display: none;
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #00000080;
   /* animation: onhover 1s linear forwards ; */
-  transition: opacity 0.5s ease;
+  transition: onhover 1s linear;
   /* Transition for opacity */
 }
 
@@ -1120,7 +1120,7 @@
   display: none;
   position: absolute;
   right: 75px;
-  animation: onhover 0.5s linear;
+  animation: onhover 1s linear;
 
 }
 
@@ -1137,7 +1137,7 @@
 .instagram-image:hover .insta-icon img,
 .instagram-image:hover .instagram-image-hover {
   display: block;
-  visibility: visible;
+  opacity: 1;
 
 }
 
