@@ -398,7 +398,7 @@
 
 .main-card img {
   position: relative;
-
+  padding-right: 12px;
   display: flex;
   width: 648px;
   height: 648px;
