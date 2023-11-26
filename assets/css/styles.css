@@ -965,8 +965,8 @@ justify-content: center;
 .owl-prev span img {
   border: none;
   position: absolute;
-  left: 0px;
-  top: 166px;
+  left: 4px;
+  top: 180px;
 
   padding: auto;
 }
@@ -976,8 +976,8 @@ justify-content: center;
   padding: auto;
 
   position: absolute;
-  right: 0px;
-  top: 166px;
+  right: 4px;
+  top: 180px;
 }
 
 .owl-nav button {
